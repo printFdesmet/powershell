@@ -1,0 +1,1 @@
+Get-ChildItem "C:\Users\fdesmet\Documents\test_script" Recurse | Where-Object {($_.LastWriteTime -lt (Get-Date).AddDays(-6))} | Remove-Item
